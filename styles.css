@@ -55,7 +55,7 @@ img {
 
   width: 90%;
   height: 100vh;
-  max-width: 900px;
+  max-width: 1200px;
 
   display: flex;
   align-items: center;
@@ -77,6 +77,9 @@ img {
 .aside {
   height: 100%;
   padding: 0 2em;
+  position: sticky;
+  /* top: 0; */
+
   /* border: 1px solid red; */
 }
 
@@ -112,11 +115,6 @@ img {
 }
 /* end of  icons */
 
-.main {
-  /* width: 500px; */
-  /* border: 1px solid red; */
-}
-
 /* title / description text */
 /* REVIEW FROM HERE */
 .eyebrow {
@@ -141,18 +139,26 @@ img {
 }
 /* 
  */
+.main {
+  /* width: 500px; */
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
 
 .job-experience {
-  display: grid;
+  border: 1px solid orange;
+  overflow-y: scroll;
+  /* display: grid;
   justify-content: start;
   gap: 1rem;
   grid-auto-flow: column;
-  overflow-x: auto;
-  position: relative;
-  padding-block: 2rem;
-  scrollbar-color: var(--clr-accent-400) var(--clr-primary-800);
+  overflow-x: auto; */
+  /* position: relative; */
+  /* padding-block: 2rem; */
+  /* scrollbar-color: var(--clr-accent-400) var(--clr-primary-800); */
 }
-
 .job-experience::after {
   content: "";
   width: 50px;
@@ -170,13 +176,13 @@ img {
   margin: 0;
 }
 
-.job:first-child::before {
+/* .job:first-child::before {
   content: "Current role";
   position: absolute;
   color: var(--clr-accent-400);
   top: 0rem;
   left: 0;
-}
+} */
 
 .year {
   color: var(--clr-accent-400);
@@ -190,11 +196,6 @@ img {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 1rem;
-}
-
-.role {
-  font-size: var(--fs-600);
-  line-height: 1.2;
 }
 
 .company {
