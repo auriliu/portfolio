@@ -3,3 +3,7 @@ img {
   /* width: 40px; */
   aspect-ratio: 1;
 }
+
+body {
+  font-family: "Outfit", sans-serif;
+}
