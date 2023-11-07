@@ -149,7 +149,7 @@ img {
 
 .job-experience {
   border: 1px solid orange;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* display: grid;
   justify-content: start;
   gap: 1rem;
