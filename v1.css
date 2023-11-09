@@ -201,10 +201,6 @@ section {
   background: var(--clr-primary-800);
 }
 
-.job * {
-  /* margin: 0; */
-}
-
 /* .job:first-child::before {
   content: "Current role";
   position: absolute;
@@ -252,4 +248,16 @@ section {
 
 .styled-button:hover {
   background-color: var(--clr-primary-300);
+}
+
+/* SKILLS */
+.skills-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
