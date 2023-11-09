@@ -92,7 +92,7 @@ nav {
 /* page title ad short intro */
 .eyebrow {
   color: var(--clr-secondary-400);
-  font-size: var(--fs-300);
+  /* font-size: var(--fs-300); */
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -189,14 +189,14 @@ section {
 }
 
 .job {
-  width: 28.5rem;
+  /* width: 28.5rem; */
   border-radius: 0.5rem;
   padding: 2rem;
   background: var(--clr-primary-800);
 }
 
 .job * {
-  margin: 0;
+  /* margin: 0; */
 }
 
 /* .job:first-child::before {
@@ -209,7 +209,7 @@ section {
 
 .year {
   color: var(--clr-accent-400);
-  font-size: var(--fs-300);
+  /* font-size: var(--fs-300); */
   font-weight: var(--fw-bold);
   letter-spacing: 0.2em;
 }
@@ -226,4 +226,24 @@ section {
   font-size: var(--fs-300);
   font-weight: var(--fw-bold);
   text-transform: uppercase;
+}
+
+/* BUTTON */
+
+.styled-button {
+  background-color: var(--clr-secondary-400);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: var(--clr-primary-300);
 }
