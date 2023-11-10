@@ -51,7 +51,7 @@ html {
 
 /* icon */
 .icon {
-  height: 40px;
+  height: 60px;
   aspect-ratio: 1;
   color: var(--clr-neutral-100);
   transition: fill 0.3s;
