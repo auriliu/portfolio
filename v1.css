@@ -49,6 +49,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  /* margin-top: 100px; */
+}
+
 /* icon */
 .icon {
   height: 60px;
@@ -56,7 +60,8 @@ html {
   color: var(--clr-neutral-100);
   transition: fill 0.3s;
 }
-.icon:hover {
+.icon:hover,
+.current-page {
   fill: var(--clr-primary-300);
 }
 .active {
