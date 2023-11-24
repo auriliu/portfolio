@@ -69,6 +69,11 @@ p {
   margin: 0;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .container {
   width: 90%;
   height: 100vh;
@@ -130,7 +135,7 @@ p {
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .page-title {
@@ -138,11 +143,6 @@ p {
   text-transform: uppercase;
   margin: 0;
   line-height: 1;
-}
-.intro {
-  margin: 1em 0;
-  font-size: var(--fs-500);
-  max-width: 45ch;
 }
 /* end of texts */
 
@@ -191,7 +191,7 @@ p {
 /* PROJECTS */
 .card {
   width: 200px;
-  aspect-ratio: 0.7;
+  aspect-ratio: 1;
   border: 1px solid red;
 }
 
