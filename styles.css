@@ -48,6 +48,8 @@
 
 body {
   margin: 0;
+  padding: 0;
+
   display: flex;
   justify-content: center;
 
@@ -89,11 +91,14 @@ img {
   display: block;
 }
 
+h2 {
+  margin-top: 0;
+}
+
 .container {
   width: 90%;
   height: 100vh;
   max-width: 1200px;
-  padding: 0 5em;
   display: grid;
   grid-template-columns: 10em 1fr;
   align-items: center;
@@ -113,7 +118,7 @@ img {
 
 .small {
   height: 30px;
-  aspect-ratio: 1;
+  width: 30px;
 }
 
 /* end of icon */
@@ -210,16 +215,16 @@ img {
 
 /* PROJECTS */
 .card {
-  width: 200px;
-  aspect-ratio: 0.7;
+  width: 12rem;
+  /* aspect-ratio: 0.7; */
   border: 1px solid white;
 }
 
 .card img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  /* aspect-ratio: 1; */
+  /* object-fit: cover; */
 }
 
 .cards-list {
@@ -229,6 +234,7 @@ img {
 }
 .card-item {
   text-align: center;
+  height: 30%;
   /* border-radius: 11px; */
 }
 .card {
@@ -241,5 +247,10 @@ img {
   display: flex;
   flex-direction: row;
 }
+
+/* .project-icons-list li {
+  margin: 0;
+  padding: 0;
+} */
 
 /* end of PROJECTS */
