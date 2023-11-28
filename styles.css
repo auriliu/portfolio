@@ -1,5 +1,20 @@
+/* social living */
+
 /*  */
 :root {
+  /* featurerd */
+  --clr-sl1: #707070;
+  --clr-sl2: #efefef;
+  /* hover */
+  --clr-sl3: #1792d2;
+  /* background */
+  --clr-sl4: #143774;
+  /* header bg */
+  --clr-sl5: #f8f8f8;
+  /* title */
+  --clr-sl5: #143774;
+
+  /*  */
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-primary-800: hsla(229, 47%, 17%, 1);
   --clr-primary-700: hsla(229, 43%, 20%, 1);
@@ -95,6 +110,12 @@ img {
 .current-page {
   fill: var(--clr-primary-300);
 }
+
+.small {
+  height: 30px;
+  aspect-ratio: 1;
+}
+
 /* end of icon */
 
 /* icons list */
@@ -131,7 +152,6 @@ img {
 /* texts */
 .title {
   color: var(--clr-secondary-400);
-  /* font-size: var(--fs-300); */
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -197,7 +217,8 @@ img {
 
 .card img {
   display: block;
-  height: 100%;
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
 }
 
@@ -208,6 +229,7 @@ img {
 }
 .card-item {
   text-align: center;
+  /* border-radius: 11px; */
 }
 .card {
   margin: 10px 0;
