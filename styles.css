@@ -191,8 +191,14 @@ img {
 /* PROJECTS */
 .card {
   width: 200px;
-  aspect-ratio: 1;
-  border: 1px solid red;
+  aspect-ratio: 0.7;
+  border: 1px solid white;
+}
+
+.card img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cards-list {
@@ -206,4 +212,12 @@ img {
 .card {
   margin: 10px 0;
 }
+/*  */
+.project-icons-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
 /* end of PROJECTS */
