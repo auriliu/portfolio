@@ -13,6 +13,37 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../styles.css" />
     <title>projects</title>
+    <style>
+      /* Styles for the overlay */
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Styles for the modal */
+      .modal {
+        background-color: #f47e7e;
+        padding: 15rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        position: relative; /* Added position:relative to ensure close button is positioned correctly */
+      }
+
+      /* Close button style */
+      .close {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -147,6 +178,21 @@
       </header>
 
       <main>
+        <!-- The Modals -->
+        <div id="modal1" class="overlay" onclick="closeModal('modal1')">
+          <div class="modal" onclick="event.stopPropagation();">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <p>This is modal 1!</p>
+          </div>
+        </div>
+
+        <div id="modal2" class="overlay" onclick="closeModal('modal2')">
+          <div class="modal" onclick="event.stopPropagation();">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <p>This is modal 2!</p>
+          </div>
+        </div>
+
         <!-- projects -->
         <section>
           <p class="title">projects</p>
@@ -155,17 +201,20 @@
             <ul class="cards-list">
               <!-- card 3: finance -->
               <li class="card-item">
-                <h2>Finance 💰</h2>
+                <h2>💰 tracker</h2>
 
                 <div class="card">
                   <a
-                    href="https://fantastic-dolphin-092baf.netlify.app/"
+                    href="https://dancing-lollipop-586ff1.netlify.app"
                     target="_blank"
                   >
                     <img src="../assets/images/money.png" alt="" />
                   </a>
                 </div>
+                <!-- Trigger buttons -->
+                <button onclick="openModal('modal1')">explore Modal 1</button>
                 <ul class="project-icons-list">
+                  <span>full stack</span>
                   <li>
                     <span>
                       <svg
@@ -396,6 +445,8 @@
                     <img src="../assets/images/holiday.png" alt="" />
                   </a>
                 </div>
+                <!-- Trigger buttons -->
+                <button onclick="openModal('modal2')">Open Modal 2</button>
                 <ul class="project-icons-list">
                   <li>
                     <span>
@@ -543,5 +594,16 @@
         <!-- end of skills -->
       </main>
     </div>
+    <script>
+      // Function to open the modal
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+      }
+
+      // Function to close the modal
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+    </script>
   </body>
 </html>

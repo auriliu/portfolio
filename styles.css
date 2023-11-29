@@ -254,3 +254,8 @@ h2 {
 } */
 
 /* end of PROJECTS */
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
