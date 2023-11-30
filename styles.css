@@ -68,12 +68,12 @@ nav {
   transform: translateY(-50%);
 }
 
-section {
+/* section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 ul {
   list-style: none;
@@ -113,7 +113,7 @@ h2 {
 }
 .icon:hover,
 .current-page {
-  fill: var(--clr-primary-300);
+  fill: var(--clr-sl1);
 }
 
 .small {
@@ -171,11 +171,11 @@ h2 {
 }
 /* end of texts */
 
-.content {
+/* .content {
   border-radius: 0.5rem;
   padding: 2rem;
   background: var(--clr-primary-800);
-}
+} */
 .accent {
   color: var(--clr-accent-400);
   font-weight: var(--fw-bold);
@@ -216,30 +216,30 @@ h2 {
 /* PROJECTS */
 .card {
   width: 12rem;
+
   /* aspect-ratio: 0.7; */
   border: 1px solid white;
 }
 
-.card img {
-  display: block;
-  width: 100%;
-  /* aspect-ratio: 1; */
-  /* object-fit: cover; */
+.card-image {
+  width: 12rem;
 }
 
 .cards-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid green;
 }
 .card-item {
   text-align: center;
   height: 30%;
-  /* border-radius: 11px; */
+  border: 1px solid red;
+  border-radius: 11px;
 }
-.card {
+/* .card {
   margin: 10px 0;
-}
+} */
 /*  */
 .project-icons-list {
   padding: 0;
@@ -258,4 +258,59 @@ h2 {
 .buttons {
   display: flex;
   gap: 20px;
+}
+/* test run */
+
+/* .content {
+  border: 1px solid yellow;
+} */
+
+.cards-container {
+  border: 1px solid yellow;
+  background-color: white;
+  color: #707070;
+  padding: 2em;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body {
+  /* background-color: white;
+  color: #707070; */
+}
+
+.card {
+  border-radius: 11px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 320 x 180 */
+.card-image {
+  height: auto;
+  width: 100%;
+  background-color: rgb(248, 122, 122);
+  border-radius: 11px 11px 0 0;
+  overflow: hidden;
+}
+
+.card-btn {
+  padding: 0.3em 1.5em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  /* background-color: #4688fa; */
+}
+
+.card-btn:hover {
+  /*  */
+}
+
+.card-text {
+  padding: 20px;
+}
+
+section {
+  border: 1px solid blue;
+  padding: 2em;
 }
