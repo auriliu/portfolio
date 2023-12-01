@@ -148,46 +148,72 @@
       </header>
 
       <main>
-        <!-- skills -->
-        <section>
-          <section>
-            <p class="title">challenges</p>
-
-            <div class="content">
-              <ul class="cards-list">
-                <!-- card 1 -->
-                <li class="card-item">
-                  <p>reverse a string</p>
-                  <div class="card">
-                    <img src="" alt="" />
-                  </div>
-                  <p>tech stack icons</p>
-                </li>
-                <!-- eend of card 1 -->
-                <!-- card 1 -->
-                <li class="card-item">
-                  <p>expense tracker</p>
-                  <div class="card">
-                    <img src="" alt="" />
-                  </div>
-                  <p>tech stack icons</p>
-                </li>
-                <!-- eend of card 1 -->
-                <!-- card 1 -->
-                <li class="card-item">
-                  <p>expense tracker</p>
-                  <div class="card">
-                    <img src="" alt="" />
-                  </div>
-                  <p>tech stack icons</p>
-                </li>
-                <!-- eend of card 1 -->
-              </ul>
+        <div class="modals">
+          <!-- The Modals -->
+          <div id="modal1" class="overlay" onclick="closeModal('modal1')">
+            <div class="modal" onclick="event.stopPropagation();">
+              <span class="close" onclick="closeModal('modal1')">&times;</span>
+              <p>This is modal 1!</p>
             </div>
-          </section>
+          </div>
+
+          <div id="modal2" class="overlay" onclick="closeModal('modal2')">
+            <div class="modal" onclick="event.stopPropagation();">
+              <span class="close" onclick="closeModal('modal2')">&times;</span>
+              <p>This is modal 2!</p>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <h1 class="title">challenges</h1>
+
+          <!-- test card -->
+          <div class="cards-container">
+            <!-- card 1 -->
+            <div class="card">
+              <div
+                class="card-image budgetBuddy"
+                onclick="openModal('modal1')"
+              ></div>
+              <h5>full stack app</h5>
+            </div>
+            <!-- card 1 -->
+
+            <!-- card 1 -->
+            <div class="card">
+              <div
+                class="card-image cinemate"
+                onclick="openModal('modal1')"
+              ></div>
+              <h5>API data fetching app</h5>
+            </div>
+            <!-- card 1 -->
+            <!-- card 1 -->
+            <div class="card">
+              <div
+                class="card-image vanVoyage"
+                onclick="openModal('modal1')"
+              ></div>
+              <h5>router app</h5>
+            </div>
+            <!-- card 1 -->
+          </div>
+
+          <!-- test card -->
         </section>
-        <!-- end of skills -->
       </main>
     </div>
+    <script>
+      // Function to open the modal
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+      }
+
+      // Function to close the modal
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+    </script>
   </body>
 </html>
