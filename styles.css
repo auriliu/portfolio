@@ -256,10 +256,19 @@ body {
   padding: 1em;
   background-position: center;
   background-size: contain;
-  color: red;
   border-radius: 11px;
   /* overflow: hidden; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.card-image:hover {
+  /* opacity: 0.8; */
+  scale: 1.1;
+}
+.modals {
+  position: relative;
+  z-index: 999;
 }
 
 .budgetBuddy {
