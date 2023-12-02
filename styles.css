@@ -115,7 +115,7 @@ h2 {
 
 .nav-icon:hover,
 .current-page {
-  fill: #707070;
+  fill: #ef3054;
 }
 
 .small {
@@ -231,6 +231,7 @@ h2 {
 .buttons {
   display: flex;
   gap: 20px;
+  /* transition: all 0.3s; */
 }
 /* test run */
 
@@ -421,3 +422,18 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: relative; /* Added position:relative to ensure close button is positioned correctly */
 }
+
+/* BTN ICONS */
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  fill: white;
+  /* transition: all 0.3s; */
+}
+
+.btnIcon-text {
+  display: flex;
+  gap: 0.5em;
+}
+
+/* BTN ICONS */
