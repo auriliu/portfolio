@@ -437,3 +437,11 @@ section {
 }
 
 /* BTN ICONS */
+
+/* favicons */
+.favicons {
+  height: 24px;
+  width: 24px;
+  fill: #ef3054;
+}
+/* favicons */
