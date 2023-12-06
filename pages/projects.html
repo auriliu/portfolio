@@ -156,6 +156,7 @@
       <main>
         <div class="modals">
           <!-- The Modals -->
+          <!-- modal 1 -->
           <div id="modal1" class="overlay" onclick="closeModal('modal1')">
             <div class="modal" onclick="event.stopPropagation();">
               <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -178,6 +179,32 @@
               </div>
             </div>
           </div>
+          <!-- modal 1 -->
+
+          <!-- modal 1 -->
+          <div id="modal2" class="overlay" onclick="closeModal('modal2')">
+            <div class="modal" onclick="event.stopPropagation();">
+              <span class="close" onclick="closeModal('modal2')">&times;</span>
+              <div class="modal-section">
+                <p>about:</p>
+                <p>
+                  a simple project really, using this that for the front-end and
+                  the other for the back-end etc. etc.
+                </p>
+                <div class="preview">
+                  <span>live preview at:</span>
+                  <a
+                    href="https://startling-salmiakki-e0fbbc.netlify.app/"
+                    target="_blank"
+                    >www.BudgetBuddy.com</a
+                  >
+                </div>
+                <p>screenshots</p>
+                <p>stack used</p>
+              </div>
+            </div>
+          </div>
+          <!-- modal 1 -->
 
           <div id="modal2" class="overlay" onclick="closeModal('modal2')">
             <div class="modal" onclick="event.stopPropagation();">
@@ -197,7 +224,7 @@
             <div class="card">
               <div
                 class="card-image budgetBuddy"
-                onclick="openModal('modal1')"
+                onclick="openModal('modal2')"
               ></div>
               <h5>full stack app</h5>
             </div>
@@ -207,7 +234,7 @@
             <div class="card">
               <div
                 class="card-image cinemate"
-                onclick="openModal('modal1')"
+                onclick="openModal('modal2')"
               ></div>
               <h5>API data fetching app</h5>
             </div>
