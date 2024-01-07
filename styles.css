@@ -418,15 +418,19 @@ section {
 .modals {
   position: relative;
   z-index: 999;
+  background-color: #143774;
 }
 
 .modal {
-  width: 600px;
-  background-color: white;
+  max-width: 800px;
+  max-height: 80%;
+  background-color: #fff;
   padding: 5rem;
+  padding-bottom: 0;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: relative; /* Added position:relative to ensure close button is positioned correctly */
+  overflow-y: scroll;
 }
 
 /* BTN ICONS */
@@ -451,3 +455,14 @@ section {
   fill: #ef3054;
 }
 /* favicons */
+
+/* 
+tech stack:
+
+*/
+
+.tech-stack {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
