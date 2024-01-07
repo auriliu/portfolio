@@ -335,6 +335,12 @@ h5 {
   /* margin-bottom: 20px; */
   margin-top: 0;
 }
+.contact-email {
+  font-weight: var(--fw-bold);
+  color: #143774;
+  text-decoration: none;
+}
+
 .color {
   color: #143774;
   font-weight: var(--fw-bold);
